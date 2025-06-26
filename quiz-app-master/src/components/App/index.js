@@ -33,7 +33,7 @@ const App = () => {
   };
 
   const saveResult = async (result) => {
-    await fetch('http://localhost:5000/api/scores', {
+    await fetch('https://fullstack-quiz-1.onrender.com/api/scores', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(result)
